@@ -1,0 +1,36 @@
+.white { 
+    background: #f4cd8d;
+}
+.black {
+    background: #746864;
+}
+
+body {
+    margin: 0;
+    display: flex
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(8, 30px);
+    overflow: hidden;
+}
+
+input {
+    display: none;
+}
+
+label {
+    width: 30px;
+    height: 30px;
+    background: #f4cd8d;
+    display: block;
+    position: relative;
+}
+
+input[type="radio"]:checked + label {
+    background: #FF0000;
+    box-shadow: -30px -60px 0 0 #0000FF, -60px -30px 0 0 #0000FF, 30px -60px 0 0 #0000FF, 60px -30px 0 0 #0000FF, -30px 60px 0 0 #0000FF, -60px 30px 0 0 #0000FF, 30px 60px 0 0 #0000FF, 60px 30px 0 0 #0000FF;
+    z-index: 100;
+    position: relative;
+}
